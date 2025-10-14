@@ -36,9 +36,9 @@
 
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html"  class="active">About me</a>
-        <a href="contact.html">Contact</a>
+        <a href="index">Home</a>
+        <a href="about"  class="active">About me</a>
+        <a href="contact">Contact</a>
     </nav>
 
     <main>
@@ -65,7 +65,7 @@
                 <p>↳ going on long, outdoor walks</p>
                 <p>↳ playing squash</p>
                 <p>↳ playing the piano</p>
-                <p>↳ <a href="books.html">reading</a> (nonfiction preferably)</p>
+                <p>↳ <a href="books">reading</a> (nonfiction preferably)</p>
                 <p>↳ enjoying dinner with friends</p>
             </ul>
         </div>
