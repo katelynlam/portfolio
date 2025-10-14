@@ -8,12 +8,17 @@
     </head>
     <style>
         body{
-            margin: 10vh;
-            height: 80vh; /* full height of screen */
+            margin: 0;
+            min-height: 100vh; /* full height of screen */
+            padding:0;
             display: flex;
             justify-content: center; /* center horizontally */
             flex-direction: column;
             font-family: Calibri, sans-serif;
+        }
+        main {
+            flex: 1;
+            padding: 5vh 2rem;
         }
         footer {
             position: relative;
@@ -24,10 +29,8 @@
             justify-content: center;
         }
         nav {
-            position: relative;
             text-align: center;
             justify-content: center;
-            top: 0;
             padding: 1rem;
             font-size: 1rem;
 
