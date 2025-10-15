@@ -6,37 +6,80 @@
   <title>Katelyn Lam</title>
   <link rel="stylesheet" href="cursor.css">
   <style>
-    body {
-      margin: 10vh;
-      height: 80vh; /* full height of screen */
-      display: flex;
-      justify-content: center; /* center horizontally */
-      align-items: center;     /* center vertically */
-      flex-direction: column;
-      font-family: Calibri, sans-serif;
+  /* Base styles (desktop) */
+   body {
+    margin: 0;
+    in-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+    box-sizing: border-box;
     }
 
-    .content {
-        display: flex;        /* your two-column layout */
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 2rem;
-    }
-    footer {
-        position: fixed;
-        text-align: center;
-        bottom:0;
-        padding: 3rem;
-        font-size: 0.9rem;
-    }
-    nav {
-            position: fixed;
-            top: 0;
-            text-align: center;
-            padding: 1rem;
-            width: 100vw;
-    }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  flex: 1; /* take remaining space between nav and footer */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  min-height: calc(100vh - 6rem); /* ensures wrapper fits between nav/footer */
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 1rem;
+    min-height: calc(100vh - 4rem); /* smaller nav/footer padding on mobile */
+    max-height: calc(100vh - 4rem);
+  }
+
+  .content {
+    flex-direction: column;      /* stack vertically */
+    justify-content: center;     /* center vertically in wrapper */
+    align-items: center;         /* center horizontally */
+    gap: 1rem;                   /* smaller spacing between items */
+    width: 100%;
+    max-height: 100%;             /* scale to wrapper height */
+  }
+
+  nav, footer {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
   </style>
+
 </head>
 
 <body>
