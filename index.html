@@ -7,33 +7,30 @@
   <link rel="stylesheet" href="cursor.css">
   <style>
   /* Base styles (desktop) */
-   body {
-    margin: 0;
-    in-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: Calibri, sans-serif;
-    box-sizing: border-box;
+    body {
+      margin: 0;
+      min-height: 100vh; /* full height of screen */
+      display: flex;
+      justify-content: center; /* center horizontally */
+      align-items: center;     /* center vertically */
+      flex-direction: column;
+      font-family: Calibri, sans-serif;
     }
 
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  box-sizing: border-box;
-}
+    footer {
+        position: fixed;
+        text-align: center;
+        bottom:0;
+        padding: 3rem;
+        font-size: 0.9rem;
+    }
+    nav {
+            position: fixed;
+            top: 0;
+            text-align: center;
+            padding: 2rem;
+            width: 100vw;
+    }
 
 .content-wrapper {
   flex: 1; /* take remaining space between nav and footer */
