@@ -8,7 +8,7 @@
   left: 0;
   width: 12px;
   height: 12px;
-  background: radial-gradient(circle, #80e9f5, #0ddadd);
+  background: radial-gradient(circle, #f58080, #dd0d22);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -22,7 +22,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  border: 2px solid #05a5a8;
+  border: 2px solid #bf0707;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9998;
